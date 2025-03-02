@@ -8,12 +8,20 @@ html{
   font-size: 62.5%;
 }
 
-body{
+
+h1{
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.main{
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .switch{
@@ -21,7 +29,7 @@ body{
   padding: 10px 50px;
   border: 1px solid transparent;
   background-color: rgb(183, 178, 178);
-
+  box-shadow: 0 4px 8px 0 rgb(19, 116, 131), 0 6px 20px 0 rgb(9, 247, 255);
 }
 
 .btn{

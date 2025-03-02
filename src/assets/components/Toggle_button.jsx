@@ -5,10 +5,14 @@ const Toggle_button = () => {
   const handleClick = () => {
     setToggle(!toggle);
   }
+  
   return (
     <>
-        <div className="switch">
-            <button className={`btn ${toggle?"on":"off"}`} onClick={handleClick}>{toggle?"on":"off"}</button>
+        <div className="main" style={{ background: toggle ? "black" : "white" }}>
+        <h1 style={{ color: toggle ? "white" : "black" }}>DARK MODE</h1>
+            <div className="switch">
+                <button className={`btn ${toggle?"on":"off"}`} onClick={handleClick}>{toggle?"on":"off"}</button>
+            </div>
         </div>
     </>
   )
